@@ -1,4 +1,4 @@
-import { crearEstudiante, fusionarCatalogos, catalogoA, catalogoB, procesarCompra } from "./index.js";
+import { crearEstudiante, fusionarCatalogos, catalogoA, catalogoB, procesarCompra,InformeEstadisticasDeportivas,MotorDeConfiguracionAvanzada } from "./index.js";
 
 let bandera = true;
 
@@ -8,6 +8,8 @@ while (bandera) {
         "1. Crear Registro de Estudiante\n" +
         "2. Fusionar Catálogos Digitales\n" +
         "3. Procesamiento de Compras\n" +
+        "4. Informe de estadísticas deportivas\n"+
+        "5. Motor de configuración avanzada\n"+
         "0. Salir\n\n" +
         "Escribe el número del ejercicio:"
     );
@@ -20,6 +22,10 @@ while (bandera) {
     }
     else if (eleccion === "3") {
         procesarCompra();
+    }else if (eleccion==="4") {
+        InformeEstadisticasDeportivas();
+    }else if (eleccion==="5") {
+        MotorDeConfiguracionAvanzada();
     }
     else if (eleccion === "0") {
         console.log("Saliendo...");
